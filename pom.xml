@@ -41,6 +41,13 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.3.2</version>
                 <configuration>
+                        <archive>
+                            <manifest>
+                                <addClasspath>true</addClasspath>
+                                <classpathPrefix>lib/</classpathPrefix>
+                                <mainClass>com.docker.docker.DockerApplication</mainClass>
+                            </manifest>
+                        </archive>
                     <finalName>docker-message-server-${version}</finalName>
                 </configuration>
             </plugin>
