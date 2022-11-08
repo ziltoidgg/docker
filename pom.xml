@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.docker</groupId>
-    <artifactId>docker</artifactId>
+    <artifactId>docker-message-server</artifactId>
     <version>1.0.0</version>
     <name>docker</name>
     <description>Demo project for Spring Boot and Docker</description>
@@ -35,21 +35,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
 
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>2.3.2</version>
-                <configuration>
-                        <archive>
-                            <manifest>
-                                <addClasspath>true</addClasspath>
-                                <classpathPrefix>lib/</classpathPrefix>
-                                <mainClass>com.docker.docker.DockerApplication</mainClass>
-                            </manifest>
-                        </archive>
-                    <finalName>docker-message-server-${version}</finalName>
-                </configuration>
             </plugin>
         </plugins>
     </build>
