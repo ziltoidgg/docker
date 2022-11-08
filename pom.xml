@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.docker</groupId>
     <artifactId>docker</artifactId>
-    <version>0.1.0</version>
+    <version>1.0.0</version>
     <name>docker</name>
     <description>Demo project for Spring Boot and Docker</description>
     <properties>
@@ -34,6 +34,15 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <finalName>docker-message-server-${version}</finalName>
+                </configuration>
             </plugin>
         </plugins>
     </build>

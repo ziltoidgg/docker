@@ -1,4 +1,4 @@
 FROM openjdk:8-jdk-alpine
-MAINTAINER gguerrero
-COPY target/docker-0.1.0.jar docker-0.1.0.jar
-ENTRYPOINT ["java","-jar","/docker-0.1.0.jar"]
+MAINTAINER baeldung.com
+COPY target/docker-message-server-1.0.0.jar message-server-1.0.0.jar
+ENTRYPOINT ["java","-jar","/message-server-1.0.0.jar"]
